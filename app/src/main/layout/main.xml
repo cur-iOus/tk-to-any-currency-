@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:ads="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:padding="10dp"
+	android:gravity="center"
+	android:background="@drawable/bg">
+
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:background="#369477"/>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="2dp"
+		android:gravity="center"
+		android:id="@+id/mainRelativeLayout1">
+
+		<EditText
+			android:id="@+id/userEditTextID"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:inputType="numberDecimal"
+			android:background="#E5E5E5"
+			android:textColor="#369477"
+			android:hint="Enter"
+			android:gravity="center"
+			android:textSize="40dp"/>
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:layout_below="@id/userEditTextID"
+			android:background="#369477"/>
+
+		<RelativeLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/userEditTextID"
+			android:layout_centerInParent="true"
+			android:layout_marginTop="10dp"
+			android:id="@+id/mainRelativeLayout2">
+
+			<TextView
+				android:id="@+id/userCoinID"
+				android:layout_width="wrap_content"
+				android:layout_height="40dp"
+				android:layout_weight="1"
+				android:textSize="15dp"
+				android:layout_gravity="center"
+				android:textStyle="bold"
+				android:textColor="#369477"
+				android:hint="Select Coin"
+				android:maxHeight="80dp"
+				android:maxLines="2"
+				android:maxWidth="200dp"
+				android:gravity="center"/>
+
+			<TextView
+				android:id="@+id/directionID"
+				android:layout_width="40dp"
+				android:layout_height="40dp"
+				android:text="→"
+				android:textSize="20dp"
+				android:layout_toRightOf="@id/userCoinID"
+				android:gravity="center"
+				android:textStyle="bold"
+				android:textColor="#369477"/>
+
+			<TextView
+				android:id="@+id/computerCoinID"
+				android:layout_width="wrap_content"
+				android:layout_height="40dp"
+				android:text="BDT ৳"
+				android:layout_toRightOf="@id/directionID"
+				android:textSize="15dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:textStyle="bold"
+				android:textColor="#369477"
+				android:maxLines="1"/>
+
+		</RelativeLayout>
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:layout_below="@id/mainRelativeLayout2"
+			android:id="@+id/mainView1"
+			android:background="#369477"/>
+
+		<TextView
+			android:id="@+id/resultViewID"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_below="@id/mainView1"
+			android:gravity="right"
+			android:hint="00.00"
+			android:textSize="40sp"
+			android:textColor="#369477"
+			android:background="#E5E5E5"/>
+
+	</RelativeLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_below="@id/mainRelativeLayout1"
+		android:id="@+id/mainView1"
+		android:background="#369477"/>
+
+	<TextView
+		android:id="@+id/mainTextView00"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Last Update: 7 September, 2020"
+		android:layout_marginBottom="15dp"
+		android:textColor="#369477"
+		android:textSize="10sp"
+		android:layout_below="@id/mainView1"
+		android:layout_centerInParent="true"/>
+
+</RelativeLayout>
+
